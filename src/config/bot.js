@@ -50,14 +50,11 @@ export const botConfig = {
     testGuildId: process.env.TEST_GUILD_ID,
   },
 
-  // =========================
-  // APPLICATIONS SYSTEM
-  // =========================
   applications: {
-    // Default questions shown when someone fills out an application.
+   
     defaultQuestions: [
-      { question: "What is your name?", required: true },
-      { question: "How old are you?", required: true },
+      { question: "Как тебя зовут??", required: true },
+      { question: "Сколько тебе лет?", required: true },
       { question: "Why do you want to join?", required: true },
     ],
 
@@ -136,7 +133,7 @@ export const botConfig = {
     },
     footer: {
       // Default footer text used in bot embeds.
-      text: "Titan Bot",
+      text: "dante",
       // Footer icon URL (null = no icon).
       icon: null,
     },
@@ -156,9 +153,9 @@ export const botConfig = {
   economy: {
     currency: {
       // Currency display name.
-      name: "coins",
+      name: "rub",
       // Plural display name.
-      namePlural: "coins",
+      namePlural: "rub",
       // Currency symbol shown in balances.
       symbol: "$",
     },
@@ -289,10 +286,10 @@ export const botConfig = {
   // =========================
   verification: {
     // Message shown when posting the verification panel.
-    defaultMessage: "Click the button below to verify yourself and gain access to the server!",
+    defaultMessage: "Нажмите кнопку ниже, чтобы подтвердить свою личность и получить доступ к серверу!",
 
     // Text on the verification button.
-    defaultButtonText: "Verify",
+    defaultButtonText: "Верифицироваться",
 
     // Automatic verification behavior.
     autoVerify: {
@@ -319,9 +316,9 @@ export const botConfig = {
 
       // Human-readable descriptions for each criteria mode.
       criteria: {
-        account_age: "Account must be older than specified days",
-        server_size: "All users if server has less than 1000 members",
-        none: "All users immediately"
+        account_age: "Учетная запись должна быть старше указанного количества дней.",
+        server_size: "Все пользователи, если на сервере менее 1000 участников.",
+        none: "Все пользователи сразу"
       }
     },
 
@@ -359,11 +356,11 @@ export const botConfig = {
     // Welcome template posted when a user joins.
     // Placeholders: {user}, {server}, {memberCount}
     defaultWelcomeMessage:
-      "Welcome {user} to {server}! We now have {memberCount} members!",
+      "Приветствую {user} на {server} удачного время-провождения!",
     // Goodbye template posted when a user leaves.
     // Placeholders: {user}, {memberCount}
     defaultGoodbyeMessage:
-      "{user} has left the server. We now have {memberCount} members.",
+      "{user} сьебался в страхе",
     // Channel ID for welcome messages.
     defaultWelcomeChannel: null,
     // Channel ID for goodbye messages.

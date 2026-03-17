@@ -25,9 +25,9 @@ export const botConfig = {
     activities: [
       {
         // Text users will see (example: "Playing /help | Titan Bot").
-        name: "Made with ❤️",
+        name: "Bot Developer #dantyxa48 ",
         // Activity type number (0 = Playing).
-        type: 0, 
+        type: 2, 
       },
     ],
   },
@@ -88,7 +88,7 @@ export const botConfig = {
   embeds: {
     colors: {
       // Main brand colors.
-      primary: "#336699", 
+      primary: "#4B0082", 
       secondary: "#2F3136", 
 
       // Standard status colors for success/error/warning/info messages.
@@ -399,18 +399,18 @@ export const botConfig = {
       // Built-in counter types and how each count is calculated.
       members: {
         name: "👥 Members",
-        description: "Total members in the server",
+        description: "Всего участников на сервере",
         getCount: (guild) => guild.memberCount.toString(),
       },
       bots: {
         name: "🤖 Bots",
-        description: "Total bot accounts in the server",
+        description: "Всего ботов на сервере",
         getCount: (guild) =>
           guild.members.cache.filter((m) => m.user.bot).size.toString(),
       },
       members_only: {
         name: "👤 Humans",
-        description: "Total human members (non-bots)",
+        description: "Всего участников на сервере (без ботов)",
         getCount: (guild) =>
           guild.members.cache.filter((m) => !m.user.bot).size.toString(),
       },
@@ -421,9 +421,9 @@ export const botConfig = {
   // GENERIC BOT MESSAGES
   // =========================
   messages: {
-    noPermission: "You do not have permission to use this command.",
-    cooldownActive: "Please wait {time} before using this command again.",
-    errorOccurred: "An error occurred while executing this command.",
+    noPermission: "У вас отсутствуют права на использование данной команды",
+    cooldownActive: "Подождите {time} перед использованием этой команды снова ",
+    errorOccurred: "Произошла ошибка при выполнении команды",
     missingPermissions:
       "I am missing required permissions to perform this action.",
     commandDisabled: "This command has been disabled.",

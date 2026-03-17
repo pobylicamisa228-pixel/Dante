@@ -2,8 +2,8 @@ import { assertAllowlistedIdentifier } from '../utils/sqlIdentifiers.js';
 import { EXPECTED_SCHEMA_LABEL, EXPECTED_SCHEMA_VERSION } from './schemaVersion.js';
 
 const configuredTables = {
-    guilds: 'guilds',
-    users: 'users',
+    guilds: 'гильдии',
+    users: 'пользователи',
     guild_users: 'guild_users',
     birthdays: 'birthdays',
     giveaways: 'giveaways',
